@@ -15,9 +15,8 @@
         arjs="sourceType: webcam; debugUIEnabled: false;"
         >
             <!--<img id="kyubi" class="kyubi" src="./0-13.png">-->
-            <!--学校-->
             <a-assets>
-                <a-asset-items id="obj" src="./ARSkun1.obj" ></a-asset-items>
+                <a-asset-items id="dragon" src="./ARSkun1.obj" ></a-asset-items>
                 <a-assets-items id="mtl" src="./ARSkun1.mtl"></a-assets-items>
               </a-assets>
             <a-camera gps-camera rotation-reader> </a-camera>
@@ -35,43 +34,41 @@
                 <a-image
             id="id4"
                 class="#kyu"
-                src="./naozane.png"
-                position="-10 2 -8"
+                src="./sakuratutumi.png"
+                position="10 1.6 -8"
                 gps-entity-place="latitude:36.1445017902298; longitude: 139.38237102698827;"
                 ></a-image>
             <a-obj-model
-                src="#obj"
+                src="#dragon"
                 mtl="#mtl"
                 scale="0.01,0.01,0.01"
                 position="10 -5 -10.0"
                 gps-entity-place="latitude:36.1445017902298; longitude: 139.38237102698827;"
                 
             ></a-obj-model>
-            <!--家-->
-                <a-image
-              id="id4"
-                class="#kyu"
-                src="./sakuratutumi.png"
-                position="-10 2 -8"
-                gps-entity-place="latitude:36.08225374495417; longitude: 139.47824112907608;"
-                ></a-image>
-              <a-obj-model
-                src="#obj"
-                mtl="#mtl"
-                scale="0.01,0.01,0.01"
-                position="10 -5 -10.0"
-                gps-entity-place="latitude:36.08225374495417; longitude: 139.47824112907608;"
-                
-              ></a-obj-model>
-                </a-scene>
-
-
-              <div style="position: fixed; bottom: 15px; ">
-                
-              </div>
-              <!--<div class="koni" id="koni">konitiwa</div>-->
-              <script src="index3.js"></script>
-            </body>
+            <a-entity material="src: #dona" mixin="poster"></a-entity>
+            <a-image
+        id="id4"
+            class="#kyu"
+            src="./seikeien.png"
+            position="10 1.6 -8"
+            gps-entity-place="latitude:36.082148070137684; longitude: 139.47826929226886;"
+            ></a-image>
+        <a-obj-model
+            src="#dragon"
+            mtl="#mtl"
+            scale="0.01,0.01,0.01"
+            position="10 -5 -10.0"
+            gps-entity-place="latitude:36.082148070137684; longitude: 139.47826929226886;"
+            
+        ></a-obj-model>
+        </a-scene>
+        <div style="position: fixed; bottom: 15px; ">
+           
+        </div>
+        <!--<div class="koni" id="koni">konitiwa</div>-->
+        <script src="index3.js"></script>
+      </body>
 
       <script>
         /*window.addEventListener('load', () => {
@@ -88,5 +85,6 @@
         });*/
     </script>
 </html>
+
 
 
